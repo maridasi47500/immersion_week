@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>exo 2 rock paper scissors</title>
+</head>
+<body>
+<h1>exo 2</h1>
+
+<div id="div1"></div>
+
+<script>
+notfirst = false;
+function rockPaperScissors(j1, j2){
+document.getElementById('div1').innerHTML += j1+" vs. ";
+document.getElementById('div1').innerHTML += j2+"<br>";
+if (j1 === j2) {
+document.getElementById('div1').innerHTML += "Draw"+"<br>";
+} else {
+switch (j1) {
+	case 'rock':
+		document.getElementById('div1').innerHTML += (j2 === 'scissors') ? 'First player wins' : 'Second player wins';
+		break;
+	case 'paper':
+		document.getElementById('div1').innerHTML += (j2 === 'rock') ? 'First player wins' : 'Second player wins';
+		break;
+	case 'scissors':
+		document.getElementById('div1').innerHTML += (j2 === 'paper') ? 'First player wins' : 'Second player wins';
+		break;
+}
+
+
+}
+document.getElementById('div1').innerHTML += '<hr>';
+}
+rockPaperScissors("rock","rock");
+rockPaperScissors("paper","scissors");
+</script>
+</body>
+</html>
