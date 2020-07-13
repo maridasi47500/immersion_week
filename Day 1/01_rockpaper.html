@@ -8,12 +8,10 @@
 <div id="div1"></div>
 
 <script>
-notfirst = false;
 function rockPaperScissors(j1, j2){
-document.getElementById('div1').innerHTML += j1+" vs. ";
-document.getElementById('div1').innerHTML += j2+"<br>";
-if (j1 === j2) {
-document.getElementById('div1').innerHTML += "Draw"+"<br>";
+if (array1.filter(value => [j1, j2].includes(value))) {
+} else if (j1 === j2) {
+console.log("Draw");
 } else {
 switch (j1) {
 	case 'rock':

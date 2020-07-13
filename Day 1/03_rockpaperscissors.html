@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>exo 3 rock paper scissors</title>
+</head>
+<body>
+<h1>exo 3</h1>
+
+<div id="div1"></div>
+
+<script>
+function rockPaperScissors(j1, j2){
+if (j1 === j2) {
+console.log("Draw");
+
+} else if (['rock','paper','scissors'].filter(value => [j1, j2].includes(value)).length < 2) {
+
+ console.log("Argument error.");
+} else {
+switch (j1) {
+	case 'rock':
+		console.log((j2 === 'scissors') ? 'First player wins' : 'Second player wins');
+		break;
+	case 'paper':
+		console.log((j2 === 'rock') ? 'First player wins' : 'Second player wins');
+		break;
+	case 'scissors':
+		console.log((j2 === 'paper') ? 'First player wins' : 'Second player wins');
+		break;
+}
+
+
+}
+}
+rockPaperScissors("paper","scissors");
+
+rockPaperScissors("rock","potatoes");
+rockPaperScissors("glue","rock");
+
+rockPaperScissors("rock","rock");
+</script>
+</body>
+</html>
