@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>exo 5 abbrev</title>
+</head>
+<body>
+<h1>exo 5</h1>
+
+<div id="div1"></div>
+
+<script>
+function abbrev(mot){
+mot2 = mot;
+if (mot.length > 3) {
+mot2 = mot.slice(0,3);
+}
+return mot2+(new Array(5-mot2.length)).join(' ')+String(mot.length);
+}
+
+console.log(abbrev("Nice"));
+console.log(abbrev("I am your father"));
+console.log(abbrev("Supercalifragilisticexpialidocious"));
+console.log(abbrev("!"));
+console.log(abbrev("Yo"));
+</script>
+</body>
+</html>

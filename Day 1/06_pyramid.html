@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>exo 6 pyramid</title>
+</head>
+<body>
+<h1>exo 6</h1>
+
+<div id="div1"></div>
+
+<script>
+function pyramid(width){ //nombre impair
+o=[];
+k = (width+1)/2;
+j=k+1;
+for (var i = 0; i <= k;i=i+1){
+    js = new Array(j).join(' ');
+    o.push(js+(new Array(i+i)).join('#'));
+  //console.log(o);
+
+  j=j-1;
+  } 
+  return o;
+}
+pyramid(9).forEach(o=>{
+console.log(o);
+});
+pyramid(5).forEach(o=>{
+console.log(o);
+});
+pyramid(1).forEach(o=>{
+console.log(o);
+});
+</script>
+</body>
+</html>

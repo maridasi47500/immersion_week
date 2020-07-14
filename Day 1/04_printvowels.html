@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>exo 4 print vowels</title>
+</head>
+<body>
+<h1>exo 4</h1>
+
+<div id="div1"></div>
+
+<script>
+function printVowels(mot){
+return mot.split('').filter(value => ['a','e','i','o','u'].includes(value)).join('');
+}
+console.log(printVowels("hello world"));
+console.log(printVowels("kangaroo"));
+console.log(printVowels("cheeseburger"));
+console.log(printVowels("rhythm"));
+</script>
+</body>
+</html>
