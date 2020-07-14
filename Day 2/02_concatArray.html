@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>ex 2 concatArray</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>ex 2 concatArray</div>
+        
+        <script>
+           function concatArray(array){
+               var split = array.join(' ').trim()+'.';
+               return split;
+           };
+           //tests
+           console.log(concatArray(["Hello", "this", "is", "dog"]));
+           console.log(concatArray(["All", "I", "want", "for", "christmas", "is", "you"]));
+           console.log(concatArray([]));
+           
+        </script>
+    </body>
+</html>

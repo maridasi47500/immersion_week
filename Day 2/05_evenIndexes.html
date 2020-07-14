@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>ex 5 evenIndexes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>ex 5 evenIndexes</div>
+        
+        <script>
+           function evenIndexes(string){
+               var letters = string.split('');
+               for (var i = 1; i<= string.length;i=i+2) {
+                   lettressupprimees = letters.splice(i, 1);
+               }
+               return letters;
+           }
+           //tests
+               console.log(evenIndexes("lol"));
+               console.log(evenIndexes("You're weird"));
+               console.log(evenIndexes(""));
+        </script>
+    </body>
+</html>

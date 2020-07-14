@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>ex 1 displayFullName</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>ex 1 displayFullName</div>
+        
+        <script>
+           function displayFullName(name){
+               var split = name.split(' ');
+               var familyname = split[split.length-1];
+               return "My name is " + familyname+", "+name;
+           };
+           //tests
+           console.log(displayFullName("James Bond"));
+           console.log(displayFullName("Ada Lovelace"));
+           console.log(displayFullName("Salvador Felipe Jacinto Dalí"));
+           
+        </script>
+    </body>
+</html>
