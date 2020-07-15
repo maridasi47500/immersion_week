@@ -1,30 +1,15 @@
 function hasValueDepth(hash, valeur){
-let newhash, k = hash;
-while (Object.values(k).length > 0){
-  //
-  newhash = Object.entries(hash);
-  
-  newhash.forEach((z)=>{
-    //console.log(z[1],typeof z[1] !=='string');
-    if (typeof z[1] !=='string'){
-      Object.entries(z[1]).forEach((b)=>{
-        if (!hash[b[0]]){
-        hash[b[0]] = b[1];
-        
-        
-        };
-      
-      });
-      console.log(hash);
-      //delete hash[z[0]];
-    };
-    delete k[z[0]];
-  
-  });
 
+  for (var key in hash) { 
+    if (typeof hash[key] !== 'string') {
+      var object = hash[key];
+      for (var key2 in object) {
+ 	  hash[key2] = object[key2];
+      }
+      delete hash[key];
+    }
+  }
 
-};
-//console.log(Object.values(hash));
 if (Object.values(hash).includes(valeur)){
 return true;
 }else {
