@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>journée 3 array exo 7</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p>journée 3 array exo 7</p>
+        <script>
+            function matrixGen(ligne, colonne) {
+                let res = [];
+                for (var maligne= 0;maligne<=ligne;maligne = maligne+colonne) {
+                    let list = [];
+                    for (var i = maligne; i <= maligne+colonne-1; i++) {
+                        list.push(i);
+                    }
+                    res.push(list);
+                }
+                return res;
+            };
+            
+            //tests
+            console.log(matrixGen(1,5));
+            console.log(matrixGen(5,4));
+            console.log(matrixGen(3,6));
+            console.log(matrixGen(0,0));
+        </script>
+    </body>
+</html>

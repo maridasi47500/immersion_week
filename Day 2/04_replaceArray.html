@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>ex 4 replaceArray</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>ex 4 replaceArray</div>
+        
+        <script>
+           function replaceArray(array){
+               var result = array.map(function(w){
+                   if (w[0].toLowerCase() === 'h') {
+                       return w.toUpperCase();
+                   } else {
+                        return w;
+                    }
+                    });
+                    return result;
+                
+           };
+           //tests
+               console.log(replaceArray(["banana", "suit", "hammer"]));
+               console.log(replaceArray(["Hello", "there"]));
+               console.log(replaceArray(["Hey!", "hey..."]));
+        </script>
+    </body>
+</html>

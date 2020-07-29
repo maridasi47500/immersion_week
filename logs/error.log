@@ -1,0 +1,9 @@
+[Tue Jul 14 12:33:02.846801 2020] [authz_core:error] [pid 7407] [client 127.0.0.1:44682] AH01630: client denied by server configuration: /home/mary/sites/immersion_week/web/
+[Tue Jul 14 12:33:02.893072 2020] [authz_core:error] [pid 7407] [client 127.0.0.1:44682] AH01630: client denied by server configuration: /home/mary/sites/immersion_week/web/favicon.ico
+[Tue Jul 14 12:33:11.908673 2020] [authz_core:error] [pid 7463] [client 127.0.0.1:44684] AH01630: client denied by server configuration: /home/mary/sites/immersion_week/web/
+[Tue Jul 14 12:33:12.204510 2020] [authz_core:error] [pid 7463] [client 127.0.0.1:44684] AH01630: client denied by server configuration: /home/mary/sites/immersion_week/web/
+[Tue Jul 14 12:33:12.412574 2020] [authz_core:error] [pid 7463] [client 127.0.0.1:44684] AH01630: client denied by server configuration: /home/mary/sites/immersion_week/web/
+[Tue Jul 14 12:33:12.605438 2020] [authz_core:error] [pid 7463] [client 127.0.0.1:44684] AH01630: client denied by server configuration: /home/mary/sites/immersion_week/web/
+[Tue Jul 14 12:33:12.779700 2020] [authz_core:error] [pid 7463] [client 127.0.0.1:44684] AH01630: client denied by server configuration: /home/mary/sites/immersion_week/web/
+[Tue Jul 14 12:33:12.956879 2020] [authz_core:error] [pid 7463] [client 127.0.0.1:44684] AH01630: client denied by server configuration: /home/mary/sites/immersion_week/web/
+[Tue Jul 14 12:33:13.140416 2020] [authz_core:error] [pid 7463] [client 127.0.0.1:44684] AH01630: client denied by server configuration: /home/mary/sites/immersion_week/web/

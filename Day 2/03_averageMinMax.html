@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>ex 3 averageMinMax</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>ex 3 averageMinMax</div>
+        
+        <script>
+           function averageMinMax(array){
+               var result = [];
+                var tri = array.sort(function(a, b) {
+                  return a - b;
+                });
+                let min = tri[0];
+                let max = tri[tri.length-1];
+                result.push("Min: "+String(min));
+                result.push("Max: "+String(max));
+                let avg = (max-min)/2;
+                result.push("Average: "+String(parseInt(avg));
+                
+                return result;
+           };
+           //tests
+           averageMinMax([-42, 0, 42]).forEach(x=>{
+               console.log(x);
+           });
+           averageMinMax([30, 20, 100]).forEach(x=>{
+               console.log(x);
+           });
+           averageMinMax([-23, -4]).forEach(x=>{
+               console.log(x);
+           });
+           averageMinMax([24, -12, 33, 4, 28]).forEach(x=>{
+               console.log(x);
+           });
+        </script>
+    </body>
+</html>
